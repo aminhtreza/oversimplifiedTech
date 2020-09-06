@@ -1,0 +1,111 @@
+
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.heading {
+    color: darkblue;
+    font-size: 4vw; /*vw is viewr width. Used instead of px to account for screen size */ 
+    
+    /*
+    transition: all 0.5s; 
+    Or
+	transition-property: color, font-size;
+	transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 1s; delay before tranisiton happens 
+    Or
+    */
+
+    transition: font-size 0.1s ease /*could add transition-delay*/;
+
+}/*below are classes*/
+.heading:hover {
+    color: aqua;
+    font-size: 20px;
+    letter-spacing: 10px;
+}
+
+.title-wrapper {
+	margin: 0;
+	background: #1C1C1E;
+	/*border-bottom: 3px solid #787975;*/
+	padding: 10px;
+}
+
+.title {
+	margin: 0;
+	width: 100%;
+	font-weight: 800;
+	font-family: Crimson Pro, serif;
+	color: black;
+	font-size: 4em;
+	text-align: center;
+}
+
+.footer-wrapper {
+	margin: 0;
+	background: #1C1C1E;
+	/*border-bottom: 3px solid #787975;*/
+	padding: 10px;
+}
+
+.footer {
+	margin: 0;
+	width: 100%;
+	color: white;
+	font-size: 10px;
+	text-align: center;
+}
+
+.intro_image {
+    height: 100vh; 
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instagram {
+	margin: 0;
+	/*background: #1C1C1E;*/
+	color: white;
+	padding: 10px;
+}
+
+.row { /* THIS IS THE DEFINITION FOR ALL LATER DECLARED ROWS */
+    margin: 0 auto;
+    max-width: 1600px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contents {
+    margin: 5em;
+    width: 85%;
+    min-width: 85%; /*SOLUTION to big-zoom problem? */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* border: solid orange; */
+}
+
+/*below are ids*/
+#mainBack {
+    background-image: url(Images/mainBack.PNG);
+}
+
+#socials {
+	max-width: 80%;
+    /* Would a max-height property be useful to control the size of the icons? */
+    width: auto;
+    padding: 0;
+    margin: 0em auto 10px;
+    border: none;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
