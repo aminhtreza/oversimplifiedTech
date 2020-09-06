@@ -1,14 +1,6 @@
+body {margin: 0;padding: 0;}
 
-
-body {
-	margin: 0;
-	padding: 0;
-}
-
-.heading {
-    color: darkblue;
-    font-size: 4vw; /*vw is viewr width. Used instead of px to account for screen size */ 
-    
+.heading {color: darkblue;font-size: 4vw; /*vw is viewr width. Used instead of px to account for screen size */
     /*
     transition: all 0.5s; 
     Or
@@ -18,22 +10,12 @@ body {
     transition-delay: 1s; delay before tranisiton happens 
     Or
     */
+    transition: font-size 0.1s ease /*could add transition-delay*/;}
 
-    transition: font-size 0.1s ease /*could add transition-delay*/;
+/*below are classes*/
+.heading:hover {color: aqua;font-size: 20px;letter-spacing: 10px;}
 
-}/*below are classes*/
-.heading:hover {
-    color: aqua;
-    font-size: 20px;
-    letter-spacing: 10px;
-}
-
-.title-wrapper {
-	margin: 0;
-	background: #1C1C1E;
-	/*border-bottom: 3px solid #787975;*/
-	padding: 10px;
-}
+.title-wrapper {margin: 0;background: #1C1C1E;/*border-bottom: 3px solid #787975;*/padding: 10px;}
 
 .title {
 	margin: 0;
@@ -84,11 +66,10 @@ body {
 }
 .contents {
     margin: 5em;
-    width: 85%;
+    width: 20%;
     min-width: 85%; /*SOLUTION to big-zoom problem? */
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     /* border: solid orange; */
 }
 
