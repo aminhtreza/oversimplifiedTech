@@ -1,0 +1,2 @@
+# oversimplifiedTech
+Website for OST
